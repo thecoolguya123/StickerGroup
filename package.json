@@ -1,0 +1,17 @@
+{
+  "name": "my-node-server",
+  "version": "1.0.0",
+  "description": "A Node.js server",
+  "main": "node.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.1.0"
+  }
+}

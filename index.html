@@ -9,25 +9,22 @@
     <title>Sticker Group</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
   </head>
-<body><header class="w3-container w3-green">
-  <h1>Sticker Group</h1>
-</header>
-<div class="w3-bar w3-green">
-  <a class="w3-button w3-black w3-disabled" href="#">Members</a><a class="w3-button w3-light-green" href="Game.html">Game</a>
-  <div class="w3-dropdown-hover">
-    <button class="w3-button w3-light-green">Older releases(Some deployments of releases may not be active)</button>
-    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-      <a href="https://869e9a91.stickergroup.pages.dev/" class="w3-bar-item w3-button w3-light-green">Release 993a85e</a>
-      <a href="https://5455370c.stickergroup.pages.dev/" class="w3-bar-item w3-button w3-light-green">Release 14f807a</a>
-      <a href="https://55e7f367.stickergroup.pages.dev/" class="w3-bar-item w3-button w3-light-green">Release e6c8681</a>
+<body>
+  <div class="w3-teal">
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+    <div class="w3-container">
+      <h1>Sticker Group</h1>
     </div>
   </div>
-</div>
+  <div class="w3-sidebar w3-bar-block w3-border-right w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a class="w3-button w3-bar-item" href="index.html">Home</a><a class="w3-button w3-black w3-disabled w3-bar-item" href="members.html">Members</a><a class="w3-button w3-bar-item" href="Game.html">Game</a>
 </div>
 <br>
 <br>
-Release 9b6a025<br>
+Release 794970c<br>
 <h6>made by andre.</h6>
 <br><br><br>
   <div class="w3-container">
@@ -38,5 +35,14 @@ Release 9b6a025<br>
     <p>Website in progress</p>
   </div>
 </div>  
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
 </body>
 </html>

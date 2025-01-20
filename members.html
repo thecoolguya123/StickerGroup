@@ -12,30 +12,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
   </head>
 <body>
+  <div class="w3-sidebar w3-bar-block w3-border-right w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a class="w3-button w3-bar-item" href="index.html">Home</a><a class="w3-button w3-bar-item" href="members.html">Members</a><a class="w3-button w3-bar-item" href="Game.html">Game</a>
+  </div>
+  <div id="main">
   <div class="w3-teal">
-    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+    <button class="w3-button w3-teal w3-xlarge" id="openNav" onclick="w3_open()">☰</button>
     <div class="w3-container">
       <h1>Sticker Group</h1>
     </div>
   </div>
-  <div class="w3-sidebar w3-bar-block w3-border-right w3-card w3-animate-left" style="display:none" id="mySidebar">
-    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-  <a class="w3-button w3-bar-item" href="index.html">Home</a><a class="w3-button w3-bar-item" href="members.html">Members</a><a class="w3-button w3-bar-item" href="Game.html">Game</a>
-</div>
-<br><br><br><br><br<br>
+<br><br><br><br><br><br>
 <h1 style="font-size: 3em;">Members(2)</h1>
 <br><br>
 <div class="w3-container w3-teal"><h2>andre</h2><img src="favicon.ico" style="height: 200px;
   "><h3>Contributions: Website, Game</h3><h3>- Is founder</h3></div><br><br>
   <div class="w3-container w3-green"><h2>joan</h2><img src="79700-200.png" style="height: 200px;
   "><h3>Contributions: None</h3></div><br><br>
+</div>
 <script>
-  function w3_open() {
+  function w3_open()  { 
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
     document.getElementById("mySidebar").style.display = "block";
   }
   
   function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("openNav").style.display = "inline-block";
   }
   </script>
 </body>

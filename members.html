@@ -12,9 +12,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
   </head>
 <body>
-  <div class="w3-sidebar w3-bar-block w3-border-right w3-card w3-animate-left" style="display:none" id="mySidebar">
-    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-  <a class="w3-button w3-bar-item" href="index.html">Home</a><a class="w3-button w3-bar-item" href="members.html">Members</a><a class="w3-button w3-bar-item" href="Game.html">Game</a>
+  <div class="w3-sidebar w3-light-grey w3-card-4 w3-animate-left" style="width:200px" id="mySidebar" style="display:none">
+    <div class="w3-bar w3-dark-grey">
+    <span class="w3-bar-item w3-padding-16">Menu</span>
+    <button onclick="w3_close()"
+    class="w3-bar-item w3-button w3-right w3-padding-16" title="close Sidebar">&times;</button>
+    </div>
+    <div class="w3-bar-block">
+      <a class="w3-button w3-bar-item" href="index.html">Home</a>
+      <a class="w3-button w3-bar-item w3-green" href="members.html">Members</a>
+      <a class="w3-button w3-bar-item" href="Game.html">Game</a>
+    </div>
   </div>
   <div id="main">
   <div class="w3-teal">
@@ -33,8 +41,8 @@
 </div>
 <script>
   function w3_open()  { 
-    document.getElementById("main").style.marginLeft = "25%";
-    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "180px";
+    document.getElementById("mySidebar").style.width = "180px";
     document.getElementById("mySidebar").style.display = "block";
   }
   
